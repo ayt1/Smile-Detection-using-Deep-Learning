@@ -9,6 +9,15 @@ This dataset has faces with background, so we need to extract faces first to bui
 
 Of course not all the faces were detected. Cnn_face_detector was unable to find 6 of the faces and some of the files came out to be null at the output. So I have coded another script called cleanFaces.py to remove null images and create labels corresponding to remaining images. Now we can move to the training part.
 
+Name of the files in which face detector couldnt find faces:
+
+file2136.jpg
+file2365.jpg
+file3557.jpg
+file3602.jpg
+file3806.jpg
+file3838.jpg
+
 ## Training Smile Detector
 
 As an architecture, I have used MiniVGGNet.py which inspired by VGGNet architecture. It may take a long time to train the model if you dont have any GPU. You can use any platform which provides you free GPU like Kaggle kernel, Google Collaboratory etc.I have used Google Collaboratory to train and save the model. In my case, I obtained %91 accuracy. 
